@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && tsc && node build-js.js",
-    "test": "jest",
-    "gitAddDist": "git add dist && git commit --amend --no-verify -C HEAD"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && npm run test && npm run gitAddDist"
+      "pre-commit": "npm run build && npm run test && git add dist"
     }
   },
   "author": "",
