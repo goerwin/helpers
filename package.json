@@ -6,11 +6,11 @@
   "scripts": {
     "build": "rm -rf dist && tsc && node build-js.js",
     "test": "jest",
-    "gitAppend": "git add dist && git commit --amend -C HEAD"
+    "gitAddDist": "git add dist && git commit --amend --no-verify -C HEAD"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run build && npm run test && npm run gitAppend"
+      "pre-commit": "npm run build && npm run test && npm run gitAddDist"
     }
   },
   "author": "",
