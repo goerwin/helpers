@@ -10,6 +10,6 @@ const allFilesInSrc = glob.sync('**/*.js', { cwd: srcFolderPath });
 allFilesInSrc.forEach((file) => {
     fsExtra.outputFileSync(
         path.resolve(distFolderPath, file),
-        path.resolve(srcFolderPath, file)
+        fsExtra.readFileSync(path.resolve(srcFolderPath, file))
     );
 });
