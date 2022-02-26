@@ -1,3 +1,4 @@
 rm -rf dist
 tsc
-cp {package.json,README.md} dist
+cp package.json dist
+cp README.md dist
