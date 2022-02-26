@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "JS Helpers for Node, Client and Universal",
   "scripts": {
-    "build": "rm -rf dist && tsc && cp $(pwd)/{package.json,README.md} dist",
+    "build": "sh build.sh",
     "prettier": "prettier --ignore-path .gitignore -c .",
     "test": "npm run prettier && jest"
   },
