@@ -1,9 +1,7 @@
-function getAnalyticsScript(trackingId: string) {
-    if (trackingId === '') {
-        return '';
-    }
+export function getAnalyticsScript(trackingId: string) {
+  if (trackingId === '') return '';
 
-    return `
+  return `
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=${trackingId}"></script>
       <script>
@@ -16,15 +14,8 @@ function getAnalyticsScript(trackingId: string) {
   `;
 }
 
-function getAdSenseScript(clientId: string) {
-    if (clientId === '') {
-        return '';
-    }
+export function getAdSenseScript(clientId: string) {
+  if (clientId === '') return '';
 
-    return `<script data-ad-client="${clientId}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>`;
+  return `<script data-ad-client="${clientId}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>`;
 }
-
-module.exports = {
-    getAnalyticsScript,
-    getAdSenseScript,
-};
