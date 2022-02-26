@@ -1,9 +1,9 @@
 {
   "name": "goerwin-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JS Helpers for Node, Client and Universal",
   "scripts": {
-    "build": "rm -rf dist && tsc && cp package.json dist",
+    "build": "rm -rf dist && tsc && cp {package.json,README.md} dist",
     "prettier": "prettier --ignore-path .gitignore -c .",
     "test": "npm run prettier && jest"
   },
