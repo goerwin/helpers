@@ -1,6 +1,6 @@
 {
   "name": "goerwin-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS Helpers for Node, Client and Universal",
   "scripts": {
     "build": "rm -rf dist && tsc && cp package.json dist",
