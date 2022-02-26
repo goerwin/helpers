@@ -4,8 +4,8 @@
   "description": "JS Helpers for Node, Client and Universal",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc && node build.js",
-    "prettier": "prettier -c .",
+    "build": "rm -rf dist && tsc",
+    "prettier": "prettier --ignore-path .gitignore -c .",
     "test": "npm run prettier && jest"
   },
   "author": "",
