@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "JS Helpers for Node, Client and Universal",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc && cp package.json dist",
     "prettier": "prettier --ignore-path .gitignore -c .",
     "test": "npm run prettier && jest"
   },
@@ -18,8 +18,5 @@
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
-  },
-  "files": [
-    "dist/**/*"
-  ]
+  }
 }
